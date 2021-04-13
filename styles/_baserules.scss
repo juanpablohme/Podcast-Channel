@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        font-family: 'IBM Plex Mono', monospace;
+        min-width: 320px;
+        max-width: 1920px;
+    
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 400;
+        }
+        h1 {
+            font-size: 2.25em;
+            line-height: 42px;
+        }
+        p {
+            font-size: 0.875em;
+            line-height: 22px;
+        }
+        .btn {
+            height: 48px;
+            width: 100%;
+            background-color: $cyan-color;
+            transition: 0.5s;
+    
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-weight: 500;
+                color: $primary-color;
+                text-align: center;
+                text-decoration: none;
+                transition: 0.1s;
+            }
+        }
+        .btn:hover {
+            background: linear-gradient(225deg, $primary-gradient 0%, $cyan-color 100%);
+            transition: 0.5s;
+    
+            a {
+                color: $white-color;
+                transition: 0.1s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.25em;
+        line-height: 42px;
+    }
+}
+
+
+
